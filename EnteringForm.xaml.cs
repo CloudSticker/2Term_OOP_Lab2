@@ -31,5 +31,12 @@ namespace WpfApp1
             this.Hide();
             DKA.Show();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window2 DKD = new Window2();
+            this.Hide();
+            DKD.Show();
+        }
     }
 }

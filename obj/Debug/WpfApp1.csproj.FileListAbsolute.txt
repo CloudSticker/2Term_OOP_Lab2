@@ -21,3 +21,36 @@ C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\Task1_.g.cs
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\Battleship.baml
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\Task1_.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\bin\Debug\WpfApp1.exe.config
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\bin\Debug\WpfApp1.exe
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\bin\Debug\WpfApp1.pdb
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\EnteringForm.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\DKA0.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\DKD0.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\Battleship.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_1.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_1.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_2.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_3.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_2.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_3.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\App.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\EnteringForm.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\DKA0.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\DKD0.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\Battleship.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_1.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_1.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_2.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_3.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_2.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_3.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.g.resources
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.exe
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.pdb

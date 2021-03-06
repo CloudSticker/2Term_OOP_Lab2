@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Кузнецов Даниил Дмитриевич" Height="450" Width="800">
+        Title="Кузнецов Даниил Дмитриевич" Height="500" Width="500">
     <Grid>
-        
+        <Button Name="task1button" Content="task1button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="473" Height="147" Click="Button_Click"/>
+        <Button Name="task2button" Content="task2button" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="473" Height="147" Click="Button_Click_1"/>
+        <Button Name="task3button" Content="task3button" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top" Width="473" Height="147" Click="Button_Click_2"/>
+
+
     </Grid>
 </Window>

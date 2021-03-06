@@ -23,5 +23,16 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int Num, k = 0;
+            Int32.TryParse(Number.Text, out Num);
+            for (int i = 0; i <= Num; i++)
+            {
+                k += i;
+            }
+            Ans.Content = k;
+        }
     }
 }

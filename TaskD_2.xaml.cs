@@ -22,6 +22,36 @@ namespace WpfApp1
         public Window6()
         {
             InitializeComponent();
+            for (int i = 0; i <= Canvas1.Height; i +=  Convert.ToInt32(Canvas1.Height / 20))
+            {
+                if (i != 200)
+                {
+                    DrawLine(0, i, Canvas1.Width, i);
+                }
+               
+            }
+
+            for (int i = 0; i <= Canvas1.Width; i += Convert.ToInt32(Canvas1.Width / 20))
+            {
+                if (i != 250)
+                {
+                    DrawLine(i, 0, i, Canvas1.Height);
+                }
+
+            }
+
+            void DrawLine(double X1, double Y1, double X2, double Y2)
+            {
+                Line line = new Line();
+                line.X1 = X1;
+                line.Y1 = Y1;
+                line.X2 = X2;
+                line.Y2 = Y2;
+                line.StrokeThickness = 0.1;
+                line.Stroke = Brushes.Black;
+                Canvas1.Children.Add(line);
+            }
         }
     }
+
 }

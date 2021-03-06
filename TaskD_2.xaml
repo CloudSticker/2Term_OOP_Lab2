@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window6" Height="450" Width="800">
+        Title="Window6" Height="463.5" Width="800">
     <Grid>
-        
+
+        <Canvas Name="Canvas1" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="500">
+            <Line X1="250" Y1="0" X2="250" Y2="400" Stroke="Red" />
+            <Line X1="0" Y1="200" X2="500" Y2="200" Stroke="Red" />
+
+        </Canvas>
+
     </Grid>
 </Window>

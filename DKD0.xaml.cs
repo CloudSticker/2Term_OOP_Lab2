@@ -23,5 +23,26 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 task1 = new Window5();
+            this.Hide();
+            task1.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window6 task1 = new Window6();
+            this.Hide();
+            task1.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window7 task1 = new Window7();
+            this.Hide();
+            task1.Show();
+        }
     }
 }
