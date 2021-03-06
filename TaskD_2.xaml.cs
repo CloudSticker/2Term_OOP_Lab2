@@ -19,39 +19,69 @@ namespace WpfApp1
     /// </summary>
     public partial class Window6 : Window
     {
+        Graph graph = new Graph();
+        List<Line> lineList = new List<Line>();
         public Window6()
         {
             InitializeComponent();
-            for (int i = 0; i <= Canvas1.Height; i +=  Convert.ToInt32(Canvas1.Height / 20))
-            {
-                if (i != 200)
-                {
-                    DrawLine(0, i, Canvas1.Width, i);
-                }
-               
-            }
+            TextBoxB.Text = "-10";
+            TextBoxA.Text = "10";
+            lineList = graph.Grid(Canvas1.Height, Canvas1.Width);
+            ClearCanvas();
 
-            for (int i = 0; i <= Canvas1.Width; i += Convert.ToInt32(Canvas1.Width / 20))
-            {
-                if (i != 250)
-                {
-                    DrawLine(i, 0, i, Canvas1.Height);
-                }
+        }
 
-            }
+        public void Paint_Click(object sender, RoutedEventArgs e)
+        {
+            ClearCanvas();
+            double a = Convert.ToDouble(TextBoxA.Text);
+            double b = Convert.ToDouble(TextBoxB.Text);
+            Canvas1.Children.Add(graph.DrawGraph(a, b));
+        }
 
-            void DrawLine(double X1, double Y1, double X2, double Y2)
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ClearCanvas();
+        }
+
+        void ClearCanvas()
+        {
+            Canvas1.Children.Clear();
+            for (int i = 0; i < lineList.Count; i++)
+                Canvas1.Children.Add(lineList[i]);
+            Canvas1.Children.Add(graph.DrawLine(250, 0, 250, 500, Brushes.Red, 1));
+            Canvas1.Children.Add(graph.DrawLine(0, 250, 500, 250, Brushes.Red, 1));
+        }
+
+       
+
+        void IsTextBoxNum()
+        {
+            bool IsItNum1 = true, IsItNum2 = true;
+            double a = 0;
+
+            
+
+            IsItNum1 = Double.TryParse(TextBoxA.Text, out a);
+            IsItNum2 = Double.TryParse(TextBoxB.Text, out a);
+
+            if ((!IsItNum1) || (!IsItNum2))
             {
-                Line line = new Line();
-                line.X1 = X1;
-                line.Y1 = Y1;
-                line.X2 = X2;
-                line.Y2 = Y2;
-                line.StrokeThickness = 0.1;
-                line.Stroke = Brushes.Black;
-                Canvas1.Children.Add(line);
+                TextBoxB.Text = "-10";
+                TextBoxA.Text = "10";
             }
+        }
+
+        private void TextBoxA_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            IsTextBoxNum();
+        }
+
+        private void TextBoxB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            IsTextBoxNum();
         }
     }
 
 }
+            

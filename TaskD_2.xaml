@@ -5,14 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window6" Height="463.5" Width="800">
-    <Grid>
+        Title="Window6" Height="626.5" Width="780">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
-        <Canvas Name="Canvas1" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="500">
-            <Line X1="250" Y1="0" X2="250" Y2="400" Stroke="Red" />
-            <Line X1="0" Y1="200" X2="500" Y2="200" Stroke="Red" />
+        <Canvas Name="Canvas1" HorizontalAlignment="Left" Height="500" Margin="10,10,0,0" VerticalAlignment="Top" Width="500">
+
 
         </Canvas>
+        <StackPanel HorizontalAlignment="Left" Height="500" Margin="515,10,0,0" VerticalAlignment="Top" Width="260" Background="#FF2BEE00">
+            <Button x:Name="PaintBtn" Content="Отрисовать" Height="30" Margin="0,25,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5" Click="Paint_Click" HorizontalAlignment="Center">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.421"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button x:Name="ClearBtn" Content="Очистить" RenderTransformOrigin="0.5,0.5" Margin="0,25,0,0" Width="130" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
+            <TextBox Name="TextBoxA" Height="24" TextWrapping="Wrap"  TextChanged="TextBoxA_TextChanged"/>
+            <TextBox Name="TextBoxB" Height="23" TextWrapping="Wrap"  TextChanged="TextBoxB_TextChanged"/>
+        </StackPanel>
 
     </Grid>
 </Window>

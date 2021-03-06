@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Graph.cs" />
     <Compile Include="GameLogic.cs" />
     <Compile Include="DKA0.xaml.cs">
       <DependentUpon>DKA0.xaml</DependentUpon>
