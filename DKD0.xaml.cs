@@ -19,6 +19,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Window2 : Window
     {
+        Graph graph = new Graph();
         public Window2()
         {
             InitializeComponent();
@@ -35,7 +36,7 @@ namespace WpfApp1
         {
             Window6 task1 = new Window6();
             this.Hide();
-            task1.check = 1;
+            graph.check = 1;
             task1.Show();
         }
 

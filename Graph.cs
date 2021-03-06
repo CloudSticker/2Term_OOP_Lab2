@@ -18,26 +18,24 @@ namespace WpfApp1
     class Graph
     {
         List<Line> lineList = new List<Line>();
-
-        public List<Line> Grid(double CanvasHeigh, double CanvasWidth)
+        public int check;
+        public List<Line> Grid(double CanvasHeigh, double CanvasWidth, int n)
         {
-            double CellSize = CanvasHeigh / 20;
+            double CellSize = CanvasHeigh / n;
 
             for (int i = 0; i <= CanvasHeigh; i += Convert.ToInt32(CellSize))
             {
-                if (i != 250)
-                {
-                    lineList.Add(DrawLine(0, i, CanvasWidth, i, Brushes.Black, 0.1));
-                }
+              
+                    lineList.Add(DrawLine(0, i, CanvasWidth, i, Brushes.Black, 0.5));
+                
 
             }
 
             for (int i = 0; i <= CanvasWidth; i += Convert.ToInt32(CellSize))
             {
-                if (i != 250)
-                {
-                    lineList.Add(DrawLine(i, 0, i, CanvasHeigh, Brushes.Black, 0.1));
-                }
+               
+                    lineList.Add(DrawLine(i, 0, i, CanvasHeigh, Brushes.Black, 0.5));
+               
 
             }
             return lineList;
@@ -67,7 +65,7 @@ namespace WpfApp1
             PointCollection points = new PointCollection();
             for (double x = -10; x < 10; x += 0.001)
             {
-                if (vars == 1)
+                if (check == 1)
                 {
                     if ((x > a) && (x < b))
                     {
