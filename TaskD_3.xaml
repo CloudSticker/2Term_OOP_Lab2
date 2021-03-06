@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window7" Height="450" Width="800">
+        Title="Window7" Height="600" Width="990" Background="#FFF38989">
     <Grid>
-        
+        <Canvas x:Name="Canvas1" HorizontalAlignment="Left" Height="500" Margin="10,10,0,0" VerticalAlignment="Top" Width="500" Background="#FF20DE20"/>
+        <Button x:Name="TurnBtn" Content="TURN" HorizontalAlignment="Left" Margin="707,291,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click" Height="136"/>
     </Grid>
 </Window>

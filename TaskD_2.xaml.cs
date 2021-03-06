@@ -26,7 +26,7 @@ namespace WpfApp1
             InitializeComponent();
             TextBoxB.Text = "-10";
             TextBoxA.Text = "10";
-            lineList = graph.Grid(Canvas1.Height, Canvas1.Width);
+            lineList = graph.Grid(Canvas1.Height, Canvas1.Width, 20);
             ClearCanvas();
 
         }
