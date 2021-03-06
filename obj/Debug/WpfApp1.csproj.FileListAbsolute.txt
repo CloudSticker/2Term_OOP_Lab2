@@ -31,7 +31,6 @@ C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_1.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_1.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_2.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_3.g.cs
-C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_2.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_3.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\App.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1_MarkupCompile.cache
@@ -44,7 +43,6 @@ C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_1.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_1.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_2.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_3.baml
-C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_2.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_3.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.g.resources
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.Properties.Resources.resources
