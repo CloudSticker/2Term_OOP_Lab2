@@ -35,6 +35,7 @@ namespace WpfApp1
         {
             Window6 task1 = new Window6();
             this.Hide();
+            task1.check = 1;
             task1.Show();
         }
 
@@ -42,6 +43,13 @@ namespace WpfApp1
         {
             Window7 task1 = new Window7();
             this.Hide();
+            task1.Show();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.Hide();
+            MainWindow task1 = new MainWindow();
             task1.Show();
         }
     }

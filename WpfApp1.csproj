@@ -78,9 +78,6 @@
     <Compile Include="TaskD_3.xaml.cs">
       <DependentUpon>TaskD_3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TaskA_2.xaml.cs">
-      <DependentUpon>TaskA_2.xaml</DependentUpon>
-    </Compile>
     <Compile Include="TaskA_3.xaml.cs">
       <DependentUpon>TaskA_3.xaml</DependentUpon>
     </Compile>
@@ -124,10 +121,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TaskA_2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="TaskA_3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -158,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window4" Height="241.698" Width="170.566">
+        Title="Window4" Height="241.698" Width="170.566" Closing="Window_Closing">
     <Grid Margin="10,0,2.585,0.226">
         <TextBox x:Name="bin" HorizontalAlignment="Left" Height="23" Margin="10,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="bin_TextChanged"/>
         <TextBox x:Name="ain" HorizontalAlignment="Left" Height="23" Margin="10,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>

@@ -42,5 +42,12 @@ namespace WpfApp1
             int c = int.Parse(ast) + int.Parse(bst);
             cout.Text = c.ToString();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.Hide();
+            Window1 task1 = new Window1();
+            task1.Show();
+        }
     }
 }

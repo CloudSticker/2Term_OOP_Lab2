@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window9" Height="450" Width="800">
-    <Grid>
+        Title="Window9" Height="450" Width="749.486" Closing="Window_Closing">
+    <Grid Margin="0,0,2.453,0.226">
         
     </Grid>
 </Window>

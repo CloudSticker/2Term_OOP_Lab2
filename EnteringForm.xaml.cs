@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace WpfApp1
 {
@@ -37,6 +38,11 @@ namespace WpfApp1
             Window2 DKD = new Window2();
             this.Hide();
             DKD.Show();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Application.Current.Shutdown(); 
         }
     }
 }

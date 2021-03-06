@@ -5,14 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Лабораторная работа №2" Height="688.698" Width="1101.584">
-    <Grid Margin="0,-2,2.038,-30.585">
+        Title="ToxicCode: ООП Лабораторная работа №2 ToxicCode" Height="688.698" Width="1101.584" Icon="logo.png" ResizeMode="CanMinimize" Closed="Window_Closed" Uid="0002" >
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo Overlay="logo.png"/>
+    </Window.TaskbarItemInfo>
+    <Grid Margin="0,-2,2.038,18.415">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="545*"/>
             <ColumnDefinition Width="546*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,-18" VerticalAlignment="Top" Width="525" Height="643" Click="Button_Click_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="9.792,10,0,0" VerticalAlignment="Top" Width="526" Height="643" Grid.Column="1" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="525" Height="622" Click="Button_Click_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="9.792,10,0,0" VerticalAlignment="Top" Width="526" Height="622" Grid.Column="1" Click="Button_Click"/>
 
     </Grid>
 </Window>

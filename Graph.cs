@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
+using System.Globalization;
 namespace WpfApp1
 {
     class Graph
@@ -53,7 +55,7 @@ namespace WpfApp1
             return line;
         }
 
-        public Polyline DrawGraph(double a, double b)
+        public Polyline DrawGraph(double a, double b, int vars)
         {
             Polyline myPolygon = new Polyline();
             myPolygon.Stroke = System.Windows.Media.Brushes.Blue;
@@ -65,12 +67,21 @@ namespace WpfApp1
             PointCollection points = new PointCollection();
             for (double x = -10; x < 10; x += 0.001)
             {
-                if ((x > a) && (x < b))
+                if (vars == 1)
                 {
-                    Point p = new Point(x * 25 + 250, -1 * x * Math.Sin(x) * 25 + 250);
-                    points.Add(p);
+                    if ((x > a) && (x < b))
+                    {
+                        Point p = new Point(x * 25 + 250, x * Math.Sin(x) * 25 + 250);
+                        points.Add(p);
+                    }
+                } else
+                {
+                    if ((x > a) && (x < b))
+                    {
+                        Point p = new Point(x * 25 + 250, (2 * Math.Sin(x) + Math.Sin(2*x) )* 25 + 250);
+                        points.Add(p);
+                    }
                 }
-
             }
 
             myPolygon.Points = points;
@@ -79,4 +90,5 @@ namespace WpfApp1
         }
 
     }
+    
 }

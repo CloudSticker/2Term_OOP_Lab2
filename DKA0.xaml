@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Кузнецов Даниил Андреевич" Height="446.012" Width="821.269">
+        Closing="DKAWindow_Closing"
+        Title="Кузнецов Даниил Андреевич" Height="500" Width="500" ResizeMode="NoResize">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="58,60,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Name="task1button" Content="Задание 1 (1 Уровень 1 Номер)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="473" Height="147" Click="Button_Click"/>
+        <Button Name="task2button" Content="Задание 2 (2 Уровень 1 Номер)" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="473" Height="147" Click="Button_Click_1"/>
+        <Button x:Name="task3button" Content="Задание 3 (3 Уровень 17 Номер)" HorizontalAlignment="Left" Margin="10,314,0,0" VerticalAlignment="Top" Width="473" Height="147" Click="task3button_Click"/>
 
     </Grid>
 </Window>

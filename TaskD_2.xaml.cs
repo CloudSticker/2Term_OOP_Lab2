@@ -21,11 +21,12 @@ namespace WpfApp1
     {
         Graph graph = new Graph();
         List<Line> lineList = new List<Line>();
+        public int check;
         public Window6()
         {
             InitializeComponent();
-            TextBoxB.Text = "-10";
-            TextBoxA.Text = "10";
+            TextBoxB.Text = "10";
+            TextBoxA.Text = "-10";
             lineList = graph.Grid(Canvas1.Height, Canvas1.Width);
             ClearCanvas();
 
@@ -36,7 +37,7 @@ namespace WpfApp1
             ClearCanvas();
             double a = Convert.ToDouble(TextBoxA.Text);
             double b = Convert.ToDouble(TextBoxB.Text);
-            Canvas1.Children.Add(graph.DrawGraph(a, b));
+            Canvas1.Children.Add(graph.DrawGraph(a, b, check));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -67,8 +68,8 @@ namespace WpfApp1
 
             if ((!IsItNum1) || (!IsItNum2))
             {
-                TextBoxB.Text = "-10";
-                TextBoxA.Text = "10";
+                TextBoxB.Text = "10";
+                TextBoxA.Text = "-10";
             }
         }
 
@@ -80,6 +81,13 @@ namespace WpfApp1
         private void TextBoxB_TextChanged(object sender, TextChangedEventArgs e)
         {
             IsTextBoxNum();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.Hide();
+            Window1 task1 = new Window1();
+            task1.Show();
         }
     }
 
