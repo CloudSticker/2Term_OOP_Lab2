@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Лабораторная работа №2" Height="450" Width="800">
-    <Grid>
-        
+        Title="Лабораторная работа №2" Height="688.698" Width="1101.584">
+    <Grid Margin="0,-2,2.038,-30.585">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="545*"/>
+            <ColumnDefinition Width="546*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,-18" VerticalAlignment="Top" Width="525" Height="643"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="9.792,10,0,0" VerticalAlignment="Top" Width="526" Height="643" Grid.Column="1"/>
+
     </Grid>
 </Window>
