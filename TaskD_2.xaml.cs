@@ -15,21 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для Window6.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window6 : Window
     {
-        public Window1()
+        public Window6()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Window4 task1 = new Window4();
-            this.Hide();
-            task1.Show();
-
         }
     }
 }

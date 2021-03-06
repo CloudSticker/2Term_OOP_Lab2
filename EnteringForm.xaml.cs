@@ -24,5 +24,12 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 DKA = new Window1();
+            this.Hide();
+            DKA.Show();
+        }
     }
 }

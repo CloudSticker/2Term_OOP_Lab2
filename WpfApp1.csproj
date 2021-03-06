@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameLogic.cs" />
     <Compile Include="DKA0.xaml.cs">
       <DependentUpon>DKA0.xaml</DependentUpon>
     </Compile>
@@ -63,6 +64,24 @@
     </Compile>
     <Compile Include="Battleship.xaml.cs">
       <DependentUpon>Battleship.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskA_1.xaml.cs">
+      <DependentUpon>TaskA_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskD_1.xaml.cs">
+      <DependentUpon>TaskD_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskD_2.xaml.cs">
+      <DependentUpon>TaskD_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskD_3.xaml.cs">
+      <DependentUpon>TaskD_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskA_2.xaml.cs">
+      <DependentUpon>TaskA_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaskA_3.xaml.cs">
+      <DependentUpon>TaskA_3.xaml</DependentUpon>
     </Compile>
     <Page Include="EnteringForm.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -85,6 +104,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Battleship.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaskA_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaskD_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaskD_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaskD_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaskA_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaskA_3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
