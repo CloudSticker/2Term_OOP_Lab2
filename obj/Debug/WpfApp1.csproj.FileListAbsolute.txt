@@ -60,3 +60,5 @@ C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\TaskD_2.baml
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\TaskD_3.baml
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\TaskA_3.baml
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\Window8.g.cs
+C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\Window8.baml

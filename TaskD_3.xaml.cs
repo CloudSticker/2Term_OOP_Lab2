@@ -48,10 +48,17 @@ namespace WpfApp1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ClearCanvas();
-            
+            Ellipse myEllipse = new Ellipse();
+            //mySolidColorBrush.Color = Color.FromArgb(255, 255, 255, 0);
+            myEllipse.StrokeThickness = 2;
+
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
+                {
+
                     AddNum(i * 50 + 5, j * 50 + 15, Convert.ToString(arr[i, j]));
+                }
+                    
             Generation();
             arr = mass;
 
