@@ -24,6 +24,8 @@ namespace WpfApp1
         List<Line> lineList = new List<Line>();
         int[,] arr = new int[10, 10];
         int[,] mass = new int[10, 10];
+        int[,] save = new int[10, 10];
+        int DeathCount = 0, GenCount = 0, AliveCount;
 
         public Window7()
         {
@@ -34,7 +36,11 @@ namespace WpfApp1
                 {
                     arr[i, j] = rnd.Next(0, 2);
                 }
-            
+
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                    AddNum(i * 50 + 5, j * 50 + 15, Convert.ToString(arr[i, j]));
+
         }
 
 
@@ -45,33 +51,102 @@ namespace WpfApp1
             for (int i = 0; i < lineList.Count; i++)
                 Canvas1.Children.Add(lineList[i]);
         }
+
+        void Restart()
+        {
+
+            DeathNumLbl.Content = $"Количество смертей: 0";
+            GenNumLbl.Content = $"Количество генераций: 0";
+            TurnBtn.IsEnabled = true;
+            DeathCount = 0;
+            GenCount = 0; 
+            AliveCount = 0;
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                {
+                    arr[i, j] = rnd.Next(0, 2);
+                }
+            ClearCanvas();
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                    AddNum(i * 50 + 5, j * 50 + 15, Convert.ToString(arr[i, j]));
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                {
+                    if (arr[i, j] == 1)
+                        AliveCount++;
+                }
+            AliveNumLbl.Content = $"Количество выживших: {AliveCount}";
+            AliveCount = 0;
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            bool areArrEqual = true;
+
             ClearCanvas();
-            Ellipse myEllipse = new Ellipse();
-            //mySolidColorBrush.Color = Color.FromArgb(255, 255, 255, 0);
-            myEllipse.StrokeThickness = 2;
+
+            
 
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
                 {
-
-                    AddNum(i * 50 + 5, j * 50 + 15, Convert.ToString(arr[i, j]));
+                    if (arr[i, j] == 1)
+                        AliveCount++;
                 }
-                    
+
+            AliveNumLbl.Content = $"Количество выживших: {AliveCount}";
+            AliveCount = 0;
+
             Generation();
-            arr = mass;
+
+
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                    if (arr[i, j] != mass[i, j])
+                        areArrEqual = false;
+
+            
+
+            if (!areArrEqual)
+            {
+                GenNumLbl.Content = $"Количество генераций: {++GenCount}";
+            }
+               
+            else
+            {
+                GenNumLbl.Content = $"Окончательное количество генераций: {GenCount}";
+                TurnBtn.IsEnabled = false;
+            }
+
+
+
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                    arr[i, j] = mass[i, j];
+
+
+
+
+
+
+
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                    AddNum(i * 50 + 5, j * 50 + 15, Convert.ToString(arr[i, j]));
 
         }
 
         void Generation()
         {
+
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
                 {
                     int k = neighbors(i, j);
                     if ((k < 2)||(k > 3))
                     {
+                        if (mass[i, j] == 1)
+                            DeathCount++;
                         mass[i, j] = 0;
                     }else if (k == 3)
                     {
@@ -82,8 +157,13 @@ namespace WpfApp1
                         mass[i, j] = arr[i, j];
                     }
                 }
+            DeathNumLbl.Content = $"Количество смертей: {DeathCount}";
         }
-        //(((j1 >= 1) && (j1 <= 9))&&((i1 >= 1) && (i1 <= 9)) && ((i != i1)&&(j != j1)))
+
+        private void RestartBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Restart();
+        }
         public int neighbors(int i1, int j1)
         {
             int k = 0;

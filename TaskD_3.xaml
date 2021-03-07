@@ -7,7 +7,18 @@
         mc:Ignorable="d"
         Title="Window7" Height="600" Width="990" Background="#FFF38989">
     <Grid>
-        <Canvas x:Name="Canvas1" HorizontalAlignment="Left" Height="500" Margin="10,10,0,0" VerticalAlignment="Top" Width="500" Background="#FF20DE20"/>
-        <Button x:Name="TurnBtn" Content="TURN" HorizontalAlignment="Left" Margin="707,291,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click" Height="136"/>
+        <Canvas x:Name="Canvas1" HorizontalAlignment="Left" Height="500" Margin="10,10,0,0" VerticalAlignment="Top" Width="500" Background="#FF84F1CA">
+            <Canvas.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.45"/>
+                </LinearGradientBrush>
+            </Canvas.OpacityMask>
+        </Canvas>
+        <Button x:Name="TurnBtn" Content="TURN" HorizontalAlignment="Left" Margin="542,374,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click" Height="136"/>
+        <Label x:Name="GenNumLbl" Content="Количество генераций: 0" HorizontalAlignment="Left" Margin="526,174,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="DeathNumLbl" Content="Количество смертей: 0" HorizontalAlignment="Left" Margin="526,236,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="AliveNumLbl" Content="Количество выживших: 0" HorizontalAlignment="Left" Margin="526,287,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="RestartBtn" Content="RESTART" HorizontalAlignment="Left" Margin="738,374,0,0" VerticalAlignment="Top" Width="156" Click="RestartBtn_Click" Height="136"/>
     </Grid>
 </Window>
