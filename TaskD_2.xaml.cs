@@ -19,6 +19,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Window6 : Window
     {
+
         Graph graph = new Graph();
         List<Line> lineList = new List<Line>();
         public Window6()
@@ -33,10 +34,11 @@ namespace WpfApp1
 
         public void Paint_Click(object sender, RoutedEventArgs e)
         {
+            DataClass data = new DataClass();
             ClearCanvas();
             double a = Convert.ToDouble(TextBoxA.Text);
             double b = Convert.ToDouble(TextBoxB.Text);
-            Canvas1.Children.Add(graph.DrawGraph(a, b, graph.check));
+            Canvas1.Children.Add(graph.DrawGraph(a, b, data.getCheck()));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -84,8 +86,9 @@ namespace WpfApp1
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            DataClass data = new DataClass();
             this.Hide();
-            if (graph.check == 1)
+            if (data.getCheck())
             {
                 Window2 task1 = new Window2();
                 task1.Show();

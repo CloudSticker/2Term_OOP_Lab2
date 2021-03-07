@@ -38,7 +38,7 @@ namespace WpfApp1
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             this.Hide();
-            Window1 task1 = new Window1();
+            Window2 task1 = new Window2();
             task1.Show();
         }
     }

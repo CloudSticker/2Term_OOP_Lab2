@@ -6,39 +6,34 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    class Coordinates
-    {
-        public int Row { get; set; }
-        public int Column { get; set; }
-        
-        public Coordinates (int row, int column)
-        {
-            Row = row;
-            Column = column;
-        }
-    }
-    class Ship 
-    {
-
-       class A 
-        {
-
-        }
-       class B
-        {
-
-        }
-       class C
-        {
-
-        }
-       class D
-        {
-
-        }
-    }
     class GameLogic
     {
-
+        private static int k;
+        private static int n;
+        private static bool firstTurn;
+        internal void kset (int set)
+        {
+            k = set;
+        }
+        internal void nset(int set)
+        {
+            n = set;
+        }
+        internal int kget()
+        {
+            return k;
+        }
+        internal int nget()
+        {
+            return n;
+        }
+        internal void firstTurnset (bool set)
+        {
+            firstTurn = set;
+        }
+        internal bool firstTurnget()
+        {
+            return firstTurn;
+        }
     }
 }

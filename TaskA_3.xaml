@@ -5,12 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window9" Height="450" Width="749.486" Closing="Window_Closing" Activated="Window_Activated">
-    <Grid Margin="0,0,2.453,0.226">
+        Title="Window9" Height="450" Width="749.486" Closing="Window_Closing" >
+    <Grid Margin="0,0,3.642,0.226">
         <Button x:Name="TurnBtn" Content="Turn" HorizontalAlignment="Left" Margin="110,297,0,0" VerticalAlignment="Top" Width="118" Height="61" Click="TurnBtn_Click"/>
-        <Slider x:Name="GiveSlider" HorizontalAlignment="Left" Margin="110,258,0,0" VerticalAlignment="Top" Width="142" ValueChanged="GiveSlider_ValueChanged" SmallChange="1" Interval="1" Minimum="1" Value="1"/>
+        <Slider x:Name="GiveSlider" HorizontalAlignment="Left" Margin="110,258,0,0" VerticalAlignment="Top" Width="142" ValueChanged="GiveSlider_ValueChanged" SmallChange="1" Interval="1" Minimum="1" Value="1" TickPlacement="BottomRight" Maximum="15" IsSnapToTickEnabled="True"/>
         <Label x:Name="BolderLbl" Content="0" HorizontalAlignment="Left" Margin="174,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="2,1.231"/>
-        <Button x:Name="StartGameBtn" Content="START" HorizontalAlignment="Left" Margin="342,297,0,0" VerticalAlignment="Top" Width="88" Height="61" Click="StartGameBtn_Click"/>
         <Label x:Name="ValueLbl" Content="0" HorizontalAlignment="Left" Margin="250,253,0,0" VerticalAlignment="Top"/>
 
     </Grid>

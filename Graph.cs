@@ -18,7 +18,7 @@ namespace WpfApp1
     class Graph
     {
         List<Line> lineList = new List<Line>();
-        public int check;
+
         public List<Line> Grid(double CanvasHeigh, double CanvasWidth, int n)
         {
             double CellSize = CanvasHeigh / n;
@@ -53,7 +53,7 @@ namespace WpfApp1
             return line;
         }
 
-        public Polyline DrawGraph(double a, double b, int vars)
+        public Polyline DrawGraph(double a, double b, bool check)
         {
             Polyline myPolygon = new Polyline();
             myPolygon.Stroke = System.Windows.Media.Brushes.Blue;
@@ -65,7 +65,7 @@ namespace WpfApp1
             PointCollection points = new PointCollection();
             for (double x = -10; x < 10; x += 0.001)
             {
-                if (check == 1)
+                if (check)
                 {
                     if ((x > a) && (x < b))
                     {

@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataClass.cs" />
     <Compile Include="Graph.cs" />
     <Compile Include="GameLogic.cs" />
     <Compile Include="DKA0.xaml.cs">
@@ -62,9 +63,6 @@
     </Compile>
     <Compile Include="DKD0.xaml.cs">
       <DependentUpon>DKD0.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Battleship.xaml.cs">
-      <DependentUpon>Battleship.xaml</DependentUpon>
     </Compile>
     <Compile Include="TaskA_1.xaml.cs">
       <DependentUpon>TaskA_1.xaml</DependentUpon>
@@ -101,10 +99,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DKD0.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Battleship.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

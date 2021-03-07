@@ -26,11 +26,11 @@ namespace WpfApp1
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
+            GameLogic game = new GameLogic();
             Window9 task1 = new Window9();
-            task1.N = Convert.ToInt32(NTextBox.Text);
-            task1.K = Convert.ToInt32(KTextBox.Text);
-            this.Hide();
+            task1.gettingNumbers(Convert.ToInt32(KTextBox.Text), Convert.ToInt32(NTextBox.Text));
             task1.Show();
+            this.Hide();
         }
     }
 }

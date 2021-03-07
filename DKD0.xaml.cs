@@ -34,9 +34,10 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            DataClass data = new DataClass();
             Window6 task1 = new Window6();
             this.Hide();
-            graph.check = 1;
+            data.setCheck(true);
             task1.Show();
         }
 
