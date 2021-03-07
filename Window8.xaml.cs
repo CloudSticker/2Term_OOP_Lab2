@@ -28,7 +28,6 @@ namespace WpfApp1
         {
             GameLogic game = new GameLogic();
             Window9 task1 = new Window9();
-            task1.gettingNumbers(Convert.ToInt32(KTextBox.Text), Convert.ToInt32(NTextBox.Text));
             task1.Show();
             this.Hide();
         }

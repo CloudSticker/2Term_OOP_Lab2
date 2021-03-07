@@ -5,17 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ToxicCode: ООП Лабораторная работа №2 ToxicCode" Height="688.698" Width="1101.584" Icon="logo.png" ResizeMode="CanMinimize" Closed="Window_Closed" Uid="0002" >
+        Title="ToxicCode: ООП Лабораторная работа №2 ToxicCode" Height="688.698" Width="523.252" Icon="logo.png" ResizeMode="CanMinimize" Closed="Window_Closed" Uid="0002" >
     <Window.TaskbarItemInfo>
         <TaskbarItemInfo Overlay="logo.png"/>
     </Window.TaskbarItemInfo>
-    <Grid Margin="0,-2,2.038,18.415">
+    <Grid Margin="0,-2,2,18">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="545*"/>
-            <ColumnDefinition Width="546*"/>
+            <ColumnDefinition Width="492*"/>
+            <ColumnDefinition Width="23*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="525" Height="622" Click="Button_Click_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="9.792,10,0,0" VerticalAlignment="Top" Width="526" Height="622" Grid.Column="1" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="713" VerticalAlignment="Top" Width="515" Source="83d5509e3c1e763b772b7a91c52bf1cc.jpg" RenderTransformOrigin="0.501,0.702" Margin="0,0,0,-69" Grid.ColumnSpan="2">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF0744C5" Offset="1"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="DKDBtn" Content="" HorizontalAlignment="Left" Margin="56,66,0,0" VerticalAlignment="Top" Width="202" Height="578" Click="Button_Click_1" BorderThickness="0">
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF0744C5" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#0C0744C5" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="DKABtn" Content="" HorizontalAlignment="Left" Margin="263,66,0,0" VerticalAlignment="Top" Width="199" Height="578" Click="Button_Click" BorderThickness="0">
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF0744C5" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#0C0744C5" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
 
     </Grid>
 </Window>

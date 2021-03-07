@@ -24,7 +24,6 @@ C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1.csprojAss
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\EnteringForm.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\DKA0.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\DKD0.g.cs
-C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\Battleship.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_1.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_1.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_2.g.cs
@@ -36,7 +35,6 @@ C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\WpfApp1_MarkupCom
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\EnteringForm.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\DKA0.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\DKD0.baml
-C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\Battleship.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskA_1.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_1.baml
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\TaskD_2.baml
