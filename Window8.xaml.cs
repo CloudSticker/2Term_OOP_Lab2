@@ -31,9 +31,16 @@ namespace WpfApp1
             game.kset(Convert.ToInt32(KTextBox.Text));
             game.aset(game.kget());
             game.nset(Convert.ToInt32(NTextBox.Text));
-            game.firstTurnset(AITurn.IsPressed);
+            game.firstTurnset(Convert.ToBoolean(AITurn.IsChecked));
+            if (game.firstTurnget())
+                game.aiTurn();
             task1.Show();
             this.Hide();
+        }
+
+        private void KTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

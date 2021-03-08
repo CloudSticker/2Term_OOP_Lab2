@@ -8,28 +8,31 @@ namespace WpfApp1
 {
     class GameLogic
     {
+        Random rand = new Random();
+       
         private static int k;
         internal void kset(int set)
         {
             k = set;
         }
-        private static int n;
-        private static bool firstTurn;
-        private static int availableTurns;
-        private static int resultOfGame;
-        
-        internal void nset(int set)
-        {
-            n = set;
-        }
         internal int kget()
         {
             return k;
+        }
+        
+        private static int n;
+        internal void nset(int set)
+        {
+            n = set;
         }
         internal int nget()
         {
             return n;
         }
+      
+        private static bool firstTurn;
+        private static int availableTurns;
+
         internal void firstTurnset (bool set)
         {
             firstTurn = set;
@@ -62,18 +65,21 @@ namespace WpfApp1
         }
         internal bool aiTurn()
         {
-            if (n != 0) 
+            if (n > 1) 
             {
-
-                if (n > availableTurns)
+                if (n % (availableTurns+1) == 1)
+                {
+                    n -= rand.Next(1, availableTurns);
+                    return true;
+                } else if (n % (availableTurns+1) == 0)
                 {
                     n -= availableTurns;
                     return true;
-                } else if (n == availableTurns+1) {
-                    
+                } else
+                {
+                    n -= (n % (availableTurns + 1)) - 1;
+                    return true;
                 }
-                
-                return true;
             } else
             {
                 return false;

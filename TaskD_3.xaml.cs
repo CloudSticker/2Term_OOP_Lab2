@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using WpfAnimatedGif;
+using System.Media;
 namespace WpfApp1
 {
     /// <summary>
@@ -26,11 +27,11 @@ namespace WpfApp1
         int[,] mass = new int[10, 10];
         int[,] save = new int[10, 10];
         int DeathCount = 0, GenCount = 0, AliveCount;
-
+        SoundPlayer spf = new SoundPlayer(WpfApp1.Properties.Resources.furas);
         public Window7()
         {
             InitializeComponent();
-            
+            spf.Load();
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
                 {
@@ -119,11 +120,16 @@ namespace WpfApp1
             }
 
 
-
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
-                    arr[i, j] = mass[i, j];
+                {
 
+                    if (mass[i, j] == 1)
+                        DeathCount++;
+                    arr[i, j] = mass[i, j];
+                }
+
+            DeathNumLbl.Content = $"Количество смертей: {DeathCount}";
 
 
 
@@ -145,8 +151,7 @@ namespace WpfApp1
                     int k = neighbors(i, j);
                     if ((k < 2)||(k > 3))
                     {
-                        if (mass[i, j] == 1)
-                            DeathCount++;
+                       
                         mass[i, j] = 0;
                     }else if (k == 3)
                     {
@@ -157,13 +162,33 @@ namespace WpfApp1
                         mass[i, j] = arr[i, j];
                     }
                 }
-            DeathNumLbl.Content = $"Количество смертей: {DeathCount}";
+         
         }
 
         private void RestartBtn_Click(object sender, RoutedEventArgs e)
         {
             Restart();
+            var controller = ImageBehavior.GetAnimationController(Fura);
+            controller.Play();
+            spf.Play();
         }
+
+
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Window2 task1 = new Window2();
+            this.Hide();
+            task1.Show();
+        }
+
+        private void Fura_AnimationCompleted(object sender, RoutedEventArgs e)
+        {
+            var controller = ImageBehavior.GetAnimationController(Fura);
+            controller.GotoFrame(0);
+            controller.Pause();
+        }
+
         public int neighbors(int i1, int j1)
         {
             int k = 0;

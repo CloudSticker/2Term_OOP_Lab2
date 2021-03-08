@@ -20,6 +20,7 @@ namespace WpfApp1
     public partial class Window9 : Window
     {
         GameLogic game = new GameLogic();
+        EndGameMessage endgamemessage = new EndGameMessage();
         public Window9()
         {
             InitializeComponent();
@@ -38,10 +39,14 @@ namespace WpfApp1
         {
             if (a)
             {
-
+                endgamemessage.resultCheck(a);
+                this.Hide();
+                endgamemessage.Show();//человек
             } else
             {
-
+                endgamemessage.resultCheck(a);
+                this.Hide();
+                endgamemessage.Show();//ai
             }
         }
         
@@ -72,7 +77,6 @@ namespace WpfApp1
 
         private void Window_Activated(object sender, EventArgs e)
         {
-
             interfaceInit();
 
         }

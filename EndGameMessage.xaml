@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApp1.EndGameMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Игра Окончена" Height="318.228" Width="286.334" Activated="Window_Activated" Closing="Window_Closing" MouseRightButtonDown="Window_MouseRightButtonDown">
+    <Grid Margin="0,0,2.132,-0.038">
+        <Label x:Name="PlayerOutLbl" Content="Test&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="214" Margin="35,60,0,0"/>
+        <Label x:Name="AiOutLbl" Content="te&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Tahoma" Width="214" Margin="35,122,0,0"/>
+        <Button Content="Попробовать снова" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="214" Height="46" Click="Button_Click" FontFamily="Tahoma" FontSize="18" FontWeight="Bold" Margin="35,0,0,71"/>
+
+    </Grid>
+</Window>

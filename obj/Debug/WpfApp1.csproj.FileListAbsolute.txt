@@ -1,7 +1,6 @@
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\bin\Debug\WpfApp1.exe.config
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\bin\Debug\WpfApp1.exe
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\bin\Debug\WpfApp1.pdb
-C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\WpfApp1.csprojAssemblyReference.cache
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\EnteringForm.g.cs
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\App.g.cs
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\WpfApp1_MarkupCompile.cache
@@ -60,3 +59,12 @@ C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\Window8.g.cs
 C:\Users\Toxic Knight\Desktop\Git Hub\2Term_OOP_Lab2\obj\Debug\Window8.baml
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\Window8.g.cs
 C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\Window8.baml
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\EndGameMessage.g.cs
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\EndGameMessage.baml
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\bin\Debug\WpfAnimatedGif.dll
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\bin\Debug\WpfAnimatedGif.pdb
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\bin\Debug\WpfAnimatedGif.xml
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\Window3.g.cs
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\Window3.baml
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\danii\OneDrive\Рабочий стол\Git\OOP\2Term_OOP_Lab2\obj\Debug\WpfApp1.csprojAssemblyReference.cache

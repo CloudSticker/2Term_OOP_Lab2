@@ -4,13 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
-        Title="Window9" Height="450" Width="749.486" Closing="Window_Closing" Activated="Window_Activated" >
-    <Grid Margin="0,0,3.642,0.226">
-        <Button x:Name="TurnBtn" Content="Turn" HorizontalAlignment="Left" Margin="110,297,0,0" VerticalAlignment="Top" Width="118" Height="61" Click="TurnBtn_Click"/>
-        <Slider x:Name="GiveSlider" HorizontalAlignment="Left" Margin="110,258,0,0" VerticalAlignment="Top" Width="142" ValueChanged="GiveSlider_ValueChanged" SmallChange="1" Interval="1" TickPlacement="BottomRight" IsSnapToTickEnabled="True"/>
-        <Label x:Name="BolderLbl" Content="0" HorizontalAlignment="Left" Margin="174,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="2,1.231"/>
-        <Label x:Name="ValueLbl" Content="0" HorizontalAlignment="Left" Margin="250,253,0,0" VerticalAlignment="Top"/>
+        Title="БАШЕ" Height="210.094" Width="463.297" Closing="Window_Closing" Activated="Window_Activated" Icon="logo.png" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" >
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo ProgressState="None"/>
+    </Window.TaskbarItemInfo>
+    <Grid Margin="1,10,2.887,4.491">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="TurnBtn" Content="Turn" HorizontalAlignment="Left" Margin="38,112,0,0" VerticalAlignment="Top" Width="142" Height="28" Click="TurnBtn_Click"/>
+        <Slider x:Name="GiveSlider" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" ValueChanged="GiveSlider_ValueChanged" SmallChange="1" Interval="1" TickPlacement="BottomRight" IsSnapToTickEnabled="True" Margin="38,51,0,0" Height="24"/>
+        <Label x:Name="ValueLbl" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="185,51,0,0" Height="24" Width="26"/>
+        <Label x:Name="BolderLbl" Content="0" HorizontalAlignment="Left" Margin="189,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2,1.231" Height="24" Width="34"/>
+        <Label Content="Оставшееся кол-во камней:                " HorizontalAlignment="Left" Height="24" Margin="37,10,0,0" VerticalAlignment="Top" Width="152"/>
+        <Image gif:ImageBehavior.AnimatedSource="ogre.gif" HorizontalAlignment="Left" Height="130" Margin="300,10,0,0" VerticalAlignment="Top" Width="123"/>
 
     </Grid>
 </Window>

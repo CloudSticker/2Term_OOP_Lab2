@@ -14,6 +14,21 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,6 +52,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -49,6 +65,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <HintPath>packages\WpfAnimatedGif.2.0.0\lib\net40\WpfAnimatedGif.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -56,6 +75,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataClass.cs" />
+    <Compile Include="EndGameMessage.xaml.cs">
+      <DependentUpon>EndGameMessage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Graph.cs" />
     <Compile Include="GameLogic.cs" />
     <Compile Include="DKA0.xaml.cs">
@@ -63,6 +85,11 @@
     </Compile>
     <Compile Include="DKD0.xaml.cs">
       <DependentUpon>DKD0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="TaskA_1.xaml.cs">
       <DependentUpon>TaskA_1.xaml</DependentUpon>
@@ -79,9 +106,16 @@
     <Compile Include="TaskA_3.xaml.cs">
       <DependentUpon>TaskA_3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window8.xaml.cs">
       <DependentUpon>Window8.xaml</DependentUpon>
     </Compile>
+    <Page Include="EndGameMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EnteringForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -122,6 +156,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Window3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Window8.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -131,11 +169,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -143,8 +176,10 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -154,10 +189,67 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\tardis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\Tardis_Landing_01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\tardisback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tardis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="83d5509e3c1e763b772b7a91c52bf1cc.jpg" />
+    <Resource Include="tardisback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\open.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\LeftDoor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\RightDoor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LeftDoor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RightDoor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\bell.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\ogre.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ogre.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fura.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\resources\furas.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
