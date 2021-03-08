@@ -23,6 +23,26 @@ namespace WpfApp1
         public Window9()
         {
             InitializeComponent();
+            GiveSlider.Minimum = 1;
+        }
+
+        private void interfaceInit()
+        {
+            game.recount();
+            BolderLbl.Content = game.nget();
+            GiveSlider.Maximum = game.aget();
+            ValueLbl.Content = GiveSlider.Value;
+        }
+
+        private void endgame(bool a)
+        {
+            if (a)
+            {
+
+            } else
+            {
+
+            }
         }
         
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -31,19 +51,32 @@ namespace WpfApp1
             Window1 task1 = new Window1();
             task1.Show();
         }
+        
 
 
         private void TurnBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            if (!game.playerTurn(Convert.ToInt32(GiveSlider.Value)))
+                endgame(true);
+            if (!game.aiTurn())
+                endgame(false);
+            interfaceInit();
         }
 
 
-
+        
         private void GiveSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
+            interfaceInit();
+        }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
+
+            interfaceInit();
 
         }
 
+        
     }
 }

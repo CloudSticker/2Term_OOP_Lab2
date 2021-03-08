@@ -28,6 +28,10 @@ namespace WpfApp1
         {
             GameLogic game = new GameLogic();
             Window9 task1 = new Window9();
+            game.kset(Convert.ToInt32(KTextBox.Text));
+            game.aset(game.kget());
+            game.nset(Convert.ToInt32(NTextBox.Text));
+            game.firstTurnset(AITurn.IsPressed);
             task1.Show();
             this.Hide();
         }
