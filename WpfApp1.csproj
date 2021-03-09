@@ -74,15 +74,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DataClass.cs" />
-    <Compile Include="EndGameMessage.xaml.cs">
-      <DependentUpon>EndGameMessage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Graph.cs" />
-    <Compile Include="GameLogic.cs" />
-    <Compile Include="DKA0.xaml.cs">
-      <DependentUpon>DKA0.xaml</DependentUpon>
-    </Compile>
     <Compile Include="DKD0.xaml.cs">
       <DependentUpon>DKD0.xaml</DependentUpon>
     </Compile>
@@ -90,9 +82,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="TaskA_1.xaml.cs">
-      <DependentUpon>TaskA_1.xaml</DependentUpon>
     </Compile>
     <Compile Include="TaskD_1.xaml.cs">
       <DependentUpon>TaskD_1.xaml</DependentUpon>
@@ -103,40 +92,11 @@
     <Compile Include="TaskD_3.xaml.cs">
       <DependentUpon>TaskD_3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TaskA_3.xaml.cs">
-      <DependentUpon>TaskA_3.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Window3.xaml.cs">
-      <DependentUpon>Window3.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Window8.xaml.cs">
-      <DependentUpon>Window8.xaml</DependentUpon>
-    </Compile>
-    <Page Include="EndGameMessage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EnteringForm.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EnteringForm.xaml.cs">
-      <DependentUpon>EnteringForm.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="DKA0.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="DKD0.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TaskA_1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -149,18 +109,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TaskD_3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TaskA_3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window8.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

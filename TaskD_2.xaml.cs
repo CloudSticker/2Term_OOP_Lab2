@@ -34,11 +34,10 @@ namespace WpfApp1
 
         public void Paint_Click(object sender, RoutedEventArgs e)
         {
-            DataClass data = new DataClass();
             ClearCanvas();
             double a = Convert.ToDouble(TextBoxA.Text);
             double b = Convert.ToDouble(TextBoxB.Text);
-            Canvas1.Children.Add(graph.DrawGraph(a, b, data.getCheck()));
+            Canvas1.Children.Add(graph.DrawGraph(a, b, true));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -86,19 +85,13 @@ namespace WpfApp1
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            DataClass data = new DataClass();
             this.Hide();
-            if (data.getCheck())
-            {
+
                 Window2 task1 = new Window2();
-                task1.Show();
-            } else
-            {
-                Window1 task1 = new Window1();
                 task1.Show();
             }
         }
     }
 
-}
+
             

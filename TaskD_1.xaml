@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window5" Height="450" Width="800" Closing="Window_Closing">
+        Title="Сумма n натуральных чисел" Height="168.339" Width="254.793" Closing="Window_Closing" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="logo.png" WindowStyle="ToolWindow">
     <Grid>
-        <Button x:Name="Count" Content="Посчитать " HorizontalAlignment="Left" Margin="351,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Label x:Name="Ans" Content="0" HorizontalAlignment="Left" Margin="596,195,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Number" HorizontalAlignment="Left" Height="23" Margin="150,195,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Count" Content="Посчитать " HorizontalAlignment="Left" Margin="156,106,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label x:Name="Ans" Content="0" HorizontalAlignment="Left" Margin="154,71,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Number" HorizontalAlignment="Left" Height="23" Margin="156,43,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Кол-во натуральных чисел" HorizontalAlignment="Left" Margin="0,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сумма натуральных чисел" HorizontalAlignment="Left" Margin="0,71,0,0" VerticalAlignment="Top" Width="149"/>
 
 
     </Grid>

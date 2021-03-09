@@ -34,10 +34,8 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            DataClass data = new DataClass();
             Window6 task1 = new Window6();
             this.Hide();
-            data.setCheck(true);
             task1.Show();
         }
 
@@ -50,9 +48,7 @@ namespace WpfApp1
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            this.Hide();
-            MainWindow task1 = new MainWindow();
-            task1.Show();
+            Application.Current.Shutdown();
         }
     }
 }
