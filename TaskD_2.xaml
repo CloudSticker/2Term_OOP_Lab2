@@ -4,18 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
-        Title="Window6" Height="626.5" Width="780" Closing="Window_Closing">
+        mc:Ignorable="d" Height="547.708" Width="780" Closing="Window_Closing" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="logo.png">
     <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Canvas Name="Canvas1" HorizontalAlignment="Left" Height="500" Margin="10,10,0,0" VerticalAlignment="Top" Width="500">
+        <Canvas Name="Canvas1" HorizontalAlignment="Left" Height="500" Margin="10,4,0,0" VerticalAlignment="Top" Width="500">
 
 
         </Canvas>
-        <StackPanel HorizontalAlignment="Left" Height="500" Margin="515,10,0,0" VerticalAlignment="Top" Width="260" Background="#FF2BEE00">
+        <StackPanel HorizontalAlignment="Left" Height="518" Margin="517,2,-4.472,-0.151" VerticalAlignment="Top" Width="260">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00CEB5" Offset="0"/>
+                    <GradientStop Color="#FF2F77A1" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
             <Button x:Name="PaintBtn" Content="Отрисовать" Height="30" Margin="0,25,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5" Click="Paint_Click" HorizontalAlignment="Center">
                 <Button.RenderTransform>
                     <TransformGroup>
@@ -27,8 +32,8 @@
                 </Button.RenderTransform>
             </Button>
             <Button x:Name="ClearBtn" Content="Очистить" RenderTransformOrigin="0.5,0.5" Margin="0,25,0,0" Width="130" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
-            <TextBox Name="TextBoxA" Height="24" TextWrapping="Wrap"  TextChanged="TextBoxA_TextChanged"/>
-            <TextBox Name="TextBoxB" Height="23" TextWrapping="Wrap"  TextChanged="TextBoxB_TextChanged"/>
+            <TextBox Name="TextBoxA" Height="24" TextWrapping="Wrap"  TextChanged="TextBoxA_TextChanged" Margin="65,25,64.925,0"/>
+            <TextBox Name="TextBoxB" Height="23" TextWrapping="Wrap"  TextChanged="TextBoxB_TextChanged" Margin="65,25,64.925,0"/>
         </StackPanel>
 
     </Grid>

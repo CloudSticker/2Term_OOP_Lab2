@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Welcome to БАШЕ" Height="238.28" Width="397.192" Icon="logo.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="Welcome to БАШЕ" Height="238.28" Width="397.192" Icon="logo.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closing="StartBashe_Closing">
     <Grid Margin="0,0,3.34,1.472">
         <Button x:Name="Start" Content="Начать игру" HorizontalAlignment="Left" Height="22" Margin="257,172,0,0" VerticalAlignment="Top" Width="120" Click="Start_Click"/>
         <CheckBox x:Name="AITurn" Content="AI turn" HorizontalAlignment="Left" Margin="185,143,0,0" VerticalAlignment="Top" />

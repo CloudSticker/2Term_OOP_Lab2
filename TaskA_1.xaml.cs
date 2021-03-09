@@ -45,14 +45,14 @@ namespace WpfApp1
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Hide();
+            Window1 task1 = new Window1();
+            task1.Show();
         }
 
         private void Window_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-            this.Hide();
-            Window1 task1 = new Window1();
-            task1.Show();
+
         }
     }
 }

@@ -90,8 +90,6 @@ namespace WpfApp1
             this.Hide();
             if (data.getCheck())
             {
-                Window2 task1 = new Window2();
-                task1.Show();
             } else
             {
                 Window1 task1 = new Window1();

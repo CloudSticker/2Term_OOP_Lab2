@@ -42,5 +42,12 @@ namespace WpfApp1
         {
 
         }
+
+        private void StartBashe_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Window1 task1 = new Window1();
+            this.Hide();
+            task1.Show();
+        }
     }
 }

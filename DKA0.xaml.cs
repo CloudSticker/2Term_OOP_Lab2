@@ -50,9 +50,7 @@ namespace WpfApp1
 
         private void DKAWindow_Closing(object sender, CancelEventArgs e)
         {
-            this.Hide();
-            MainWindow task1 = new MainWindow();
-            task1.Show();
+            Application.Current.Shutdown();
         }
     }
 }
